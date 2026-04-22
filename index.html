@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Computer Vision 2026 | USI</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --primary: #2563eb;
+        --border: #e2e8f0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 2.5rem 1.25rem 3.5rem;
+      }
+
+      .hero {
+        background: linear-gradient(135deg, #dbeafe 0%, #f8fafc 65%);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 2rem;
+      }
+
+      .hero h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.75rem, 3vw, 2.4rem);
+        line-height: 1.2;
+      }
+
+      .hero p {
+        margin: 0.4rem 0;
+        color: var(--muted);
+      }
+
+      .hero a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .hero a:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        margin-top: 2.25rem;
+      }
+
+      h2 {
+        margin-bottom: 0.65rem;
+        font-size: 1.45rem;
+      }
+
+      .project-card {
+        margin-top: 1rem;
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .project-card img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .project-content {
+        padding: 1.2rem;
+      }
+
+      .project-content h3 {
+        margin-top: 0;
+        margin-bottom: 0.55rem;
+        font-size: 1.2rem;
+      }
+
+      .project-meta {
+        margin: 0 0 0.7rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      footer {
+        margin-top: 2.5rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header class="hero">
+        <h1>Computer Vision &amp; Pattern Recognition (USI)</h1>
+        <p>
+          This GitHub Pages site supports the Master-level course at Università della Svizzera italiana (USI).
+          During the semester, students will propose and develop practical computer vision projects.
+        </p>
+        <p>
+          Course page:
+          <a href="https://search.usi.ch/index.php/en/courses/35275471/computer-vision-pattern-recognition">Computer Vision &amp; Pattern Recognition (35275471)</a>
+        </p>
+      </header>
+
+      <section aria-labelledby="project-ideas">
+        <h2 id="project-ideas">Project Ideas</h2>
+        <p>
+          Add your project proposal by opening a pull request to this repository. Keep your entry concise and include a teaser image plus an abstract.
+        </p>
+
+        <article class="project-card">
+          <img src="assets/project-teaser.svg" alt="Teaser image for the sample project idea" />
+          <div class="project-content">
+            <h3>Sample Idea: Vision-Guided Urban Tree Health Monitoring</h3>
+            <p class="project-meta">Team size: 2-3 students · Domain: Remote sensing + semantic understanding</p>
+            <p>
+              Cities need scalable ways to monitor tree health, but manual surveys are expensive and infrequent. This project proposes a lightweight computer vision pipeline that combines street-level photos and drone snapshots to estimate crown density, discoloration, and early stress indicators over time. We would build a compact dataset from public imagery, annotate a small set of health labels, and benchmark segmentation and feature extraction models for robustness under changing weather and illumination. The expected output is an interactive map where each tree receives a confidence-based health score and short explanation of the visual cues used by the model. The project emphasizes practical reproducibility, model interpretability, and clear communication of uncertainty for non-technical stakeholders such as city planners and environmental services.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        Contributions are welcome throughout the course via pull requests.
+      </footer>
+    </main>
+  </body>
+</html>

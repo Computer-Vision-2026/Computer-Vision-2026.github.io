@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Sample project teaser image">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#22d3ee" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" rx="30" />
+  <g fill="#ffffff" opacity="0.16">
+    <circle cx="160" cy="120" r="100" />
+    <circle cx="1080" cy="540" r="180" />
+    <rect x="430" y="140" width="520" height="36" rx="18" />
+    <rect x="430" y="210" width="440" height="36" rx="18" />
+  </g>
+  <g fill="#ffffff" font-family="Segoe UI, Arial, sans-serif">
+    <text x="120" y="300" font-size="68" font-weight="700">Sample Project Idea</text>
+    <text x="120" y="365" font-size="36" opacity="0.9">Vision-Guided Urban Tree Health Monitoring</text>
+    <text x="120" y="430" font-size="28" opacity="0.9">Computer Vision 2026 · USI</text>
+  </g>
+</svg>
