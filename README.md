@@ -1,5 +1,3 @@
-![Proof HTML](https://github.com/Computer-Vision-2026/Computer-Vision-2026.github.io/actions/workflows/validate-html.yml/badge.svg)
-
 # Computer Vision 2026
 
 Landing page for the USI Master-level course project ideas gallery.
