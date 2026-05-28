@@ -204,19 +204,19 @@
           </article>
 
           <article class="project-card">
-            <div class="teaser" role="img" aria-label="Real-time video stream with multiple colored bounding boxes responding to dynamic text queries such as 'car', 'truck', and 'pedestrian'.">
-              <img src="assets/group_E.png" alt="Interactive Video Query System Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+            <div class="teaser" role="img" aria-label="Dashcam video with multiple colored masks for detections responding to natural language text queries such as 'a classic new york taxi', 'a work truck', and 'a pedestrian'.">
+              <img src="assets/group_E.png" alt="Semantic Querying of Driving Scenes" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
               <span class="teaser-label" style="z-index:3;">Group E</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Object detection, tracking, vision-language models, real-time interaction</p>
-              <h3>Interactive Real-Time Semantic Querying of Driving Scenes</h3>
+              <p class="project-meta">Object segmentation, tracking, vision-language models, open-vocabulary queries</p>
+              <h3>Semantic Querying of Driving Scenes</h3>
               <p class="project-abstract">
-                What if you could search inside a video as it plays? This project transforms a driving scene into an interactive interface where users can type natural language queries such as "car", "truck", or "pedestrian" and instantly see matching objects highlighted and tracked in real time.
+                This project transforms a driving scene taken from a dashcam into an interface where users can type natural language queries such as "a classic new york taxi", "a work truck" and "a pedestrian" and see matching objects highlighted and tracked in real time.
                 <br><br>
-                The demo emphasizes fluid interaction: queries can be added or removed on the fly without interrupting the video, multiple concepts can be explored simultaneously, and each query is visualized with distinct colors for clarity. This allows users to dynamically “interrogate” the scene and observe how the system adapts immediately to new inputs.
+                The demo emphasizes open-vocabulary capabilities: queries can written in natural language, multiple concepts can be explored simultaneously, and each query is visualized with distinct colors for clarity.
                 <br><br>
-                Rather than focusing purely on detection, the project showcases a new way of interacting with visual data, turning passive video into an active, query-driven exploration tool.
+                Rather than focusing purely on detection, the project also adds a way to detect whenever a pedestrian is actively crossing the road, marking it in red to highlight it. Moreover a small detector runs in parallel to detect traffic signs, also responding to natural language queries given by the user, like "no parking sign" or "one-way sign". 
               </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
