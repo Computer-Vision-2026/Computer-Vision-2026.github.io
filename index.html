@@ -117,15 +117,9 @@
             </div>
             <div class="project-content">
               <p class="project-meta">Self-supervised video representations, foundation models, anomaly detection</p>
-              <h3>Probing V-JEPA 2: What Does a Video Model Actually See?</h3>
+              <h3>Can V-JEPA read ECG?</h3>
               <p class="project-abstract">
-                V-JEPA 2 is Meta&rsquo;s self-supervised video encoder, trained without labels to predict masked
-                spatio-temporal regions. We want to open up its latent space and understand how it reacts to the
-                visual world &mdash; and, more interestingly, to things that don&rsquo;t belong in it. Starting from a frozen
-                pretrained encoder, we build an interactive demo that embeds short clips and surfaces structure,
-                similarity, and drift over time. On top of this, we explore anomaly detection as a concrete
-                application: can the embedding space tell a banana from a pair of scissors in a rock-paper-scissors
-                game, a boat on a highway, or an abnormal beat in an ECG recording?
+                Can V-JEPA learn meaningful representations for ECG-based arrhythmia detection? In this project, we investigate whether a V-JEPA encoder, originally designed for video understanding, can capture clinically relevant patterns from ECG signals. We transform ECG recordings into video-like inputs and use the pretrained V-JEPA encoder to generate latent representations. These representations are then evaluated by training a range of downstream predictors for arrhythmia classification. By comparing performance across predictors, we assess the quality and transferability of V-JEPA features for cardiac signal analysis.
               </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
@@ -136,23 +130,24 @@
           </article>
 
           <article class="project-card">
-            <div class="teaser" role="img" aria-label="Two hands playing rock-paper-scissors, but one holds a banana instead of a valid sign, illustrating anomaly detection.">
+            <div class="teaser" role="img" aria-label="Visual product search for marketplace items using image embeddings, segmentation, and on-device retrieval.">
               <img src="assets/group_B.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
               <span class="teaser-label" style="z-index:3;">Group B</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Vision-language embeddings, segmentation, on-device retrieval</p>
-              <h3>One Photo, Many Aisles: Visual Search Across a Heterogeneous Marketplace</h3>
+              <p class="project-meta">Visual search, marketplace retrieval, segmentation, Android demo</p>
+              <h3>Visual Search for Marketplace</h3>
               <p class="project-abstract">
-                A single foundation model rarely knows a sofa, a smartphone and a floral dress equally well — yet a real
-                marketplace catalog mixes all of them on the same shelf. This project studies where general-purpose visual
-                encoders like CLIP and SigLIP 2 stop being enough for e-commerce retrieval, and what has to be rebuilt
-                around them when the catalog is not one domain but twenty. Each query is first stripped of its context —
-                mannequins, human models, living-room scenes, studio gradients — then routed to a category-specific
-                expert whose embeddings are reranked with the fine-grained color and texture cues that generic models
-                quietly discard. The whole pipeline is then compressed into an on-device Android demo, raising a second
-                question the paper versions of Google Lens rarely address in the open: how much of a foundation-model
-                retrieval system actually survives when it has to run on a phone?
+                This project explores visual product search for marketplace applications, where users can search for visually similar
+                items using a single photo. I build a retrieval pipeline based on vision-language embeddings, object segmentation,
+                category-aware routing, and color-aware reranking to improve search quality for fashion and marketplace-style product
+                images. The final system is demonstrated in an Android app that performs on-device image-based retrieval over a local
+                product catalog.
+              </p>
+              <p>
+                <a href="https://github.com/siiena25/ImageSearch" target="_blank" rel="noopener noreferrer">
+                  GitHub / Code
+                </a>
               </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
@@ -204,19 +199,19 @@
           </article>
 
           <article class="project-card">
-            <div class="teaser" role="img" aria-label="Real-time video stream with multiple colored bounding boxes responding to dynamic text queries such as 'car', 'truck', and 'pedestrian'.">
-              <img src="assets/group_E.png" alt="Interactive Video Query System Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+            <div class="teaser" role="img" aria-label="Dashcam video with multiple colored masks for detections responding to natural language text queries such as 'a classic new york taxi', 'a work truck', and 'a pedestrian'.">
+              <img src="assets/group_E.png" alt="Semantic Querying of Driving Scenes" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
               <span class="teaser-label" style="z-index:3;">Group E</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Object detection, tracking, vision-language models, real-time interaction</p>
-              <h3>Interactive Real-Time Semantic Querying of Driving Scenes</h3>
+              <p class="project-meta">Object segmentation, tracking, vision-language models, open-vocabulary queries</p>
+              <h3>Semantic Querying of Driving Scenes</h3>
               <p class="project-abstract">
-                What if you could search inside a video as it plays? This project transforms a driving scene into an interactive interface where users can type natural language queries such as "car", "truck", or "pedestrian" and instantly see matching objects highlighted and tracked in real time.
+                This project transforms a driving scene taken from a dashcam into an interface where users can type natural language queries such as "a classic new york taxi", "a work truck" and "a pedestrian" and see matching objects highlighted and tracked in real time.
                 <br><br>
-                The demo emphasizes fluid interaction: queries can be added or removed on the fly without interrupting the video, multiple concepts can be explored simultaneously, and each query is visualized with distinct colors for clarity. This allows users to dynamically “interrogate” the scene and observe how the system adapts immediately to new inputs.
+                The demo emphasizes open-vocabulary capabilities: queries can written in natural language, multiple concepts can be explored simultaneously, and each query is visualized with distinct colors for clarity.
                 <br><br>
-                Rather than focusing purely on detection, the project showcases a new way of interacting with visual data, turning passive video into an active, query-driven exploration tool.
+                Rather than focusing purely on detection, the project also adds a way to detect whenever a pedestrian is actively crossing the road, marking it in red to highlight it. Moreover a small detector runs in parallel to detect traffic signs, also responding to natural language queries given by the user, like "no parking sign" or "one-way sign". 
               </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
@@ -255,11 +250,10 @@
               <span class="teaser-label" style="z-index:3;">Group O</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Segmentation, Object detection, tracking, foundation models</p>
-              <h3>Smart Event Detection for Highlight Clips</h3>
+              <p class="project-meta">Prompted segmentation, motion tracking, event detection, video highlights</p>
+              <h3>Behaviour Lens</h3>
               <p class="project-abstract">
-                Have you ever missed a highlight during a match? This system can capture highlights based on a user prompt or directly from a video.
-                It uses advanced, state-of-the-art approaches, such as Meta’s SAM3, to track objects, detect events, and generate short highlight clips.
+                What if a video highlight came with the evidence behind it? Behaviour Lens takes a video and a text prompt, uses SAM3 to segment the requested object in sampled frames, and turns those detections into trajectories, velocities, timestamps, masks, overlays, and auditable CSV outputs.
                 <br><br>
                 The goal is to combine modern segmentation models (such as SAM) with classical computer vision techniques. Segmentation serves as a strong perception layer, while event detection is driven by motion-based features such as trajectories, velocity, and frequency analysis, along with lightweight reasoning.
                 The system follows a modular design, consisting of a general perception and feature extraction pipeline combined with task-specific event detection modules.
