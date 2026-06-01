@@ -125,7 +125,7 @@
                 pretrained encoder, we build an interactive demo that embeds short clips and surfaces structure,
                 similarity, and drift over time. On top of this, we explore anomaly detection as a concrete
                 application: can the embedding space tell a banana from a pair of scissors in a rock-paper-scissors
-                game, a boat on a highway, or a compression glitch from a real event?
+                game, a boat on a highway, or an abnormal beat in an ECG recording?
               </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
@@ -184,6 +184,231 @@
             </div>
           </article>
 
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Interface preview of SemanticSpot showing natural language search and object segmentation in a video.">
+              <img src="assets/group_C.png" alt="SemanticSpot Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group C</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Video Search, Segmentation, Foundation Models</p>
+              <h3>SemanticSpot: "Ctrl+F" for Videos</h3>
+              <p class="project-abstract">
+                Ever wanted to find a specific object or action in a long video without scrubbing through it manually? SemanticSpot is an interactive web app that lets you search videos using natural language. You can simply type a query like "the person wearing a blue hat" or "the red coffee mug". Behind the scenes, the app uses CLIP to instantly locate the exact timestamp where your search appears, and SAM (Segment Anything) to dynamically track and highlight the object on the screen. It’s a smart, zero-shot visual search engine combined with automatic segmentation!
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Real-time video stream with multiple colored bounding boxes responding to dynamic text queries such as 'car', 'truck', and 'pedestrian'.">
+              <img src="assets/group_E.png" alt="Interactive Video Query System Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group E</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Object detection, tracking, vision-language models, real-time interaction</p>
+              <h3>Interactive Real-Time Semantic Querying of Driving Scenes</h3>
+              <p class="project-abstract">
+                What if you could search inside a video as it plays? This project transforms a driving scene into an interactive interface where users can type natural language queries such as "car", "truck", or "pedestrian" and instantly see matching objects highlighted and tracked in real time.
+                <br><br>
+                The demo emphasizes fluid interaction: queries can be added or removed on the fly without interrupting the video, multiple concepts can be explored simultaneously, and each query is visualized with distinct colors for clarity. This allows users to dynamically “interrogate” the scene and observe how the system adapts immediately to new inputs.
+                <br><br>
+                Rather than focusing purely on detection, the project showcases a new way of interacting with visual data, turning passive video into an active, query-driven exploration tool.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Facial expression recognition with emotion labels and bounding boxes over a human face.">
+              <img src="assets/group M.png" alt="Facial Expression Recognition Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group M</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Emotion recognition, deep learning, CNN-RNN</p>
+              <h3>Facial Expression Recognition with Hybrid Models</h3>
+              <p class="project-abstract">
+                Can a model reliably read human emotions from a single image? This project explores facial expression recognition by classifying faces into categories such as happiness, sadness, anger, and surprise. We build a small interactive demo that visualizes predicted emotions on input images.
+                <br><br>
+                To achieve this, we combine CNNs for spatial feature extraction with RNNs to capture temporal patterns, comparing pretrained models (MobileNetV2, InceptionV3) with a custom CNN-RNN trained from scratch on FER2013 and CK+ datasets.
+                <br><br>
+                The project focuses on evaluating performance, robustness, and how transfer learning influences emotion recognition across different data conditions.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Promptable Video Event Finder with Segmentation-Guided Motion Analysis.">
+              <img src="assets/group_O.png" alt="Highlights Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group O</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Segmentation, Object detection, tracking, foundation models</p>
+              <h3>Smart Event Detection for Highlight Clips</h3>
+              <p class="project-abstract">
+                Have you ever missed a highlight during a match? This system can capture highlights based on a user prompt or directly from a video.
+                It uses advanced, state-of-the-art approaches, such as Meta’s SAM3, to track objects, detect events, and generate short highlight clips.
+                <br><br>
+                The goal is to combine modern segmentation models (such as SAM) with classical computer vision techniques. Segmentation serves as a strong perception layer, while event detection is driven by motion-based features such as trajectories, velocity, and frequency analysis, along with lightweight reasoning.
+                The system follows a modular design, consisting of a general perception and feature extraction pipeline combined with task-specific event detection modules.
+                <br><br>
+                The system is primarily designed for human action detection (e.g., waving, raising a hand, standing up). As an extension, it can also handle simple sports scenarios, such as tracking a ball moving toward or crossing a goal, demonstrating its ability to generalize to multi-object interactions.
+                </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Open-vocabulary tracking project.">
+              <img src="assets/group_X.png" alt="Two segmented puppies in a park" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group X</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Object detection, segmentation, tracking, vision-language models</p>
+              <h3>Open-Vocabulary Object Tracking with Grounding DINO, SAM 2 and CLIP</h3>
+              <p class="project-abstract">
+                We present an open-vocabulary object tracking system that enables users to search, segment, and track arbitrary objects in images and videos using natural language queries.
+                <br><br>
+                Our pipeline combines Grounding DINO for text-conditioned object detection, CLIP for semantic verification, and SAM 2 for segmentation and temporal tracking.
+                <br><br>
+                The system supports interactive querying through a Gradio web interface and demonstrates how modern vision foundation models can be integrated into a unified visual understanding pipeline.
+                </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Image retrieval with CLIP.">
+              <img src="assets/group_Q.png" alt="Image retrieval preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group Q</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">CLIP, FAISS, patch-level matching, image retrieval</p>
+              <h3>Image retrieval with CLIP</h3>
+              <p class="project-abstract">
+                Got a clue? ImageDetective can find the picture. Describe what you’re looking for, upload an image, or search by visual details. ImageDetective connects text and images through foundation models, combining global semantic search with patch-level matching for smarter and more explainable retrieval.
+                <br><br>
+                We will propose a vision language retrieval system to implement bidirectional search between images and natural language. With CLIP, we will map both modalities into a share embedding space, a image could be retrieved with FAISS indexing. Perhaps the accurary should be improved, further approach is using a SAM3 for text guided semantic segmentation and enable patch level matching.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="SfM with Colmap">
+              <img src="assets/group_I.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group I</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Structure from Motion, 3D reconstruction, mobile robots</p>
+              <h3>One video, a 3D reconstruction of civil infrastructure</h3>
+              <p class="project-abstract">
+                Structure from Motion (SfM) is one of the most widely used techniques for reconstructing
+                objects and scenes from images or video. This project aims to test hand-crafted 
+                Structure-from-Motion algorithms available in Colmap for reconstructing 3D environments 
+                characterized by poor illumination, using frames captured from a limited linear camera 
+                movements. The objective is to evaluate the limitations and accuracy of state-of-the-art
+                methods in challenging, hard-to-reconstruct environments.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Hand_signs">
+              <img src="assets/group_A.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group A</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Gesture detection, tracking</p>
+              <h3>Real time hand gesture detection: from rock paper scissors to sign interpretation</h3>
+              <p class="project-abstract">
+                This project focuses on building a computer vision system capable of recognizing a variety of hand signs and gestures captured by a static camera.
+                The core goal is to develop a robust gesture recognition pipeline that can distinguish between different hand configurations in real time.
+                As a proof-of-concept, the system will be integrated into the game of rock-paper-scissors, where it detects each player's gesture and determines the outcome of each round.
+                The final result will be an interactive demo showcasing accurate and responsive hand gesture recognition in a playful, real-world scenario.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Cooking action recognition">
+              <img src="assets/group_P.png" alt="" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group P</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Action recognition, video understanding, self-supervised embeddings</p>
+              <h3>From Raw Footage to Recipe: Extracting Cooking Steps from Egocentric Video</h3>
+              <p class="project-abstract">
+                This project builds a system that watches egocentric cooking videos and automatically extracts the sequence of cooking actions performed, with the goal of reconstructing a recipe from raw footage alone.
+                Because most frames in a cooking video are irrelevant, the pipeline first applies a relevance classifier to filter out background activity, then routes the remaining clips through an RNN-based action classifier that identifies steps such as cutting, peeling, and boiling.
+                Video representations are produced by V-JEPA 2, which encodes each video as a sequence of 64-frame block embeddings without requiring labeled pretraining data.
+                The result is an end-to-end pipeline that turns an unstructured kitchen video into a structured, step-by-step recipe.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+          
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Real-time whiteboard transcription pipeline.">
+              <img src="assets/group_W.png" alt="Whiteboard with detected text regions and entity overlays" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+              <span class="teaser-label" style="z-index:3;">Group W</span>
+            </div>
+            <div class="project-content">
+              <p class="project-meta">Computer vision, OCR, segmentation, vision-language models, object tracking</p>
+              <h3>Real-Time Whiteboard Transcription with Temporal Ledger</h3>
+              <p class="project-abstract">
+                When a professor is at the board, you have two choices, pay attention, or copy. You can't really do both at the same time.
+                <br><br>
+                We wanted to eliminate that trade-off. Our system transcribes in real time what the professor writes, so the student is free to just listen and understand.
+                <br><br>
+                The pipeline captures the full evolution of whiteboard content across a lecture, every correction and erasure included, and synthesises it into structured Markdown output.
+              </p>
+              <label class="project-toggle-label">
+                <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
+                <span class="project-toggle-more">Read more</span>
+                <span class="project-toggle-less">Show less</span>
+              </label>
+            </div>
+          </article>
+
           <article class="project-card add-project-card">
             <a href="https://github.com/Computer-Vision-2026/Computer-Vision-2026.github.io/edit/main/index.html" target="_blank" rel="noopener">
               <span class="add-project-icon" aria-hidden="true">+</span>
@@ -193,7 +418,6 @@
           </article>
 
         </div>
-
       </div>
     </section>
   </main>
