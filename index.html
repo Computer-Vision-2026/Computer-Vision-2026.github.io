@@ -244,23 +244,19 @@
             </div>
           </article>
 
-         <article class="project-card">
-            <div class="teaser" role="img" aria-label="Promptable Video Event Finder with Segmentation-Guided Motion Analysis.">
-              <img src="assets/group_O.png" alt="Highlights Preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
+          <article class="project-card">
+            <div class="teaser" role="img" aria-label="Behaviour Lens video analysis pipeline with prompt-guided segmentation, trajectories, and highlight clips.">
+              <img src="assets/group_O.png" alt="Behaviour Lens preview" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:2;">
               <span class="teaser-label" style="z-index:3;">Group O</span>
             </div>
             <div class="project-content">
-              <p class="project-meta">Segmentation, Object detection, tracking, foundation models</p>
-              <h3>Smart Event Detection for Highlight Clips</h3>
+              <p class="project-meta">Prompted segmentation, motion tracking, event detection, video highlights</p>
+              <h3>Behaviour Lens</h3>
               <p class="project-abstract">
-                Have you ever missed a highlight during a match? This system can capture highlights based on a user prompt or directly from a video.
-                It uses advanced, state-of-the-art approaches, such as Meta’s SAM3, to track objects, detect events, and generate short highlight clips.
+                What if a video highlight came with the evidence behind it? Behaviour Lens takes a video and a text prompt, uses SAM3 to segment the requested object in sampled frames, and turns those detections into trajectories, velocities, timestamps, masks, overlays, and auditable CSV outputs.
                 <br><br>
-                The goal is to combine modern segmentation models (such as SAM) with classical computer vision techniques. Segmentation serves as a strong perception layer, while event detection is driven by motion-based features such as trajectories, velocity, and frequency analysis, along with lightweight reasoning.
-                The system follows a modular design, consisting of a general perception and feature extraction pipeline combined with task-specific event detection modules.
-                 <br><br>
-                The system is primarily designed for human action detection (e.g., waving, raising a hand, standing up). As an extension, it can also handle simple sports scenarios, such as tracking a ball moving toward or crossing a goal, demonstrating its ability to generalize to multi-object interactions.
-                </p>
+                On top of this traceable motion layer, the pipeline detects threshold events, ranks sustained motion windows, and handles multi-object car tracking for lane-change analysis. The final result is not just a short annotated clip, but a behaviour explanation that can be inspected frame by frame.
+              </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
                 <span class="project-toggle-more">Read more</span>
