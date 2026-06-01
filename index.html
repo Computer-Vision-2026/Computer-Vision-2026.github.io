@@ -117,15 +117,9 @@
             </div>
             <div class="project-content">
               <p class="project-meta">Self-supervised video representations, foundation models, anomaly detection</p>
-              <h3>Probing V-JEPA 2: What Does a Video Model Actually See?</h3>
+              <h3>Can V-JEPA read ECG?</h3>
               <p class="project-abstract">
-                V-JEPA 2 is Meta&rsquo;s self-supervised video encoder, trained without labels to predict masked
-                spatio-temporal regions. We want to open up its latent space and understand how it reacts to the
-                visual world &mdash; and, more interestingly, to things that don&rsquo;t belong in it. Starting from a frozen
-                pretrained encoder, we build an interactive demo that embeds short clips and surfaces structure,
-                similarity, and drift over time. On top of this, we explore anomaly detection as a concrete
-                application: can the embedding space tell a banana from a pair of scissors in a rock-paper-scissors
-                game, a boat on a highway, or an abnormal beat in an ECG recording?
+                Can V-JEPA learn meaningful representations for ECG-based arrhythmia detection? In this project, we investigate whether a V-JEPA encoder, originally designed for video understanding, can capture clinically relevant patterns from ECG signals. We transform ECG recordings into video-like inputs and use the pretrained V-JEPA encoder to generate latent representations. These representations are then evaluated by training a range of downstream predictors for arrhythmia classification. By comparing performance across predictors, we assess the quality and transferability of V-JEPA features for cardiac signal analysis.
               </p>
               <label class="project-toggle-label">
                 <input class="project-toggle" type="checkbox" aria-label="Toggle full project pitch">
